@@ -1,0 +1,19 @@
+{
+  "name": "rockandedmfestival",
+  "version": "1.0.0",
+  "description": "SASS, Gulp and HTML project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "HTML"
+  ],
+  "author": "Arturo Hernandez Garza",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
+}
