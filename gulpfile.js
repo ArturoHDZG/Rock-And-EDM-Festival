@@ -24,4 +24,4 @@ function dev(done) {
 }
 
 exports.css = css;
-exports.dev = dev;
+exports.dev = dev; // Ejecutar en la consola como: npx gulp dev
