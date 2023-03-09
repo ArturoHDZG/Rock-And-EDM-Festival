@@ -1,5 +1,6 @@
 @use 'variables' as v;
 
+// Media Queries
 @mixin phone {
   @media (min-width: v.$phone) {
     @content;
@@ -22,4 +23,19 @@
   @media (min-width: v.$desktop) {
     @content;
   }
+}
+
+// CSS Flex
+@mixin flex($direction: null, $spacing: null, $alignment: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $spacing;
+  align-items: $alignment;
+}
+
+// CSS Grid
+@mixin grid($columns, $number, $size-gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, $number);
+  gap: $size-gap;
 }

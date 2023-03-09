@@ -1,6 +1,7 @@
 @use 'variables' as v;
 
 body {
+  background-color: v.$white;
   font-family: v.$montserrat;
   font-size: 1.6rem;
 }
@@ -8,6 +9,7 @@ body {
 p {
   font-size: 2rem;
   color: v.$black;
+  line-height: 1.5;
 }
 
 .container {
@@ -34,4 +36,9 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+img {
+  height: auto;
+  width: 100%;
 }
