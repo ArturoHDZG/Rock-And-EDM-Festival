@@ -39,3 +39,10 @@
   grid-template-columns: repeat($columns, $number);
   gap: $size-gap;
 }
+
+// Limpiar estilos listas
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

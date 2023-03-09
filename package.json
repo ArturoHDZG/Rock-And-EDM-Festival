@@ -22,9 +22,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.56.2"
-  },
-  "dependencies": {
+    "sass": "^1.56.2",
     "stable": "^0.1.8",
     "svgo": "^3.0.2",
     "uuid": "^9.0.0"
