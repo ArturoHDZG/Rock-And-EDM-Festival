@@ -66,17 +66,27 @@ function jpgReduce(done) {
   done();
 }
 
-// Monitor de cambios de CSS
+// Función para ir trasportando código JS al build
+function javascript(done) {
+  src('src/js/**/*.js')
+    .pipe(dest('build/js'));
+
+  done();
+}
+
+// Monitor de cambios de CSS y ejecución de tareas
 function dev(done) {
   watch('src/scss/**/*.scss', css);
+  watch('src/js/**/*.js', javascript);
 
   done();
 }
 
 exports.css = css;
+exports.js = javascript;
 exports.webpConvert = webpConvert;
 exports.avifConvert = avifConvert;
 exports.jpgReduce = jpgReduce;
 
 // Ejecutar en la consola como: npx gulp dev
-exports.dev = parallel(jpgReduce, webpConvert, avifConvert, dev);
+exports.dev = parallel(jpgReduce, webpConvert, avifConvert, javascript, dev);
