@@ -101,6 +101,11 @@ body {
 body.body-hold {
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  body.fixed-body {
+    padding-top: 8.6rem;
+  }
+}
 
 p {
   font-size: 2rem;
@@ -141,6 +146,15 @@ img {
 
 .header {
   background-color: #4CB8B3;
+}
+@media (min-width: 768px) {
+  .header.fixed-scrollbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #000000;
+  }
 }
 .header h1 {
   color: #FFFFFF;
@@ -458,4 +472,14 @@ img {
   background-color: #752F97;
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.site-footer {
+  background-color: #F53756;
+  padding: 1rem;
+}
+.site-footer p {
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
 }
